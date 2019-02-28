@@ -1,0 +1,28 @@
+= unicode2latex
+
+image:https://img.shields.io/gem/v/unicode2latex.svg["Gem Version", link="https://rubygems.org/gems/unicode2latex"]
+image:https://img.shields.io/travis/metanorma/unicode2latex/master.svg["Build Status", link="https://travis-ci.com/metanorma/unicode2latex"]
+image:https://codeclimate.com/github/metanorma/unicode2latex/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/unicode2latex"]
+
+Gem for translating UTF8 Unicode characters to LaTeX escapes
+
+[source,ruby]
+----
+require "unicode2latex"
+
+latex = 'M =
+ \begin{bmatrix}
+  -\sin λ_0 & \cos λ_0 & 0 \\
+  -\sin φ_0 \cos λ_0 & -\sin φ_0 \sin λ_0 & \cos φ_0 \\
+  \cos φ_0 \cos λ_0 & \cos φ_0 \sin λ_0 & \sin φ_0
+ \end{bmatrix}'
+
+Unicode2Latex.unicode2latex(latex)
+
+>> M =
+ \begin{bmatrix}
+  -\sin \lambda_0 & \cos \lambda_0 & 0 \\
+  -\sin \varphi_0 \cos \lambda_0 & -\sin \varphi_0 \sin \lambda_0 & \cos \varphi_0 \\
+  \cos \varphi_0 \cos \lambda_0 & \cos \varphi_0 \sin \lambda_0 & \sin \varphi_0
+ \end{bmatrix}
+----
