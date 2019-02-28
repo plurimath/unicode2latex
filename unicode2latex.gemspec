@@ -6,7 +6,7 @@ require "unicode2latex/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "unicode2latex"
-  spec.version       = Unicode2LateX::VERSION
+  spec.version       = Unicode2LaTeX::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 

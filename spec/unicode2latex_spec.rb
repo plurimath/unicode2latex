@@ -6,19 +6,20 @@ RSpec.describe "Unicode2LaTeX" do
   end
 
   it "converts LaTeX Unicode" do
-    expect(Unicode2LaTeX.unicode2latex(<<~"INPUT")).to be_equivalent_to <<~"OUTPUT"
-    M =
+    expect(Unicode2LaTeX.unicode2latex(<<~'INPUT')).to eq <<~'OUTPUT'
+   M =
  \begin{bmatrix}
   -\sin λ_0 & \cos λ_0 & 0 \\
   -\sin φ_0 \cos λ_0 & -\sin φ_0 \sin λ_0 & \cos φ_0 \\
   \cos φ_0 \cos λ_0 & \cos φ_0 \sin λ_0 & \sin φ_0
  \end{bmatrix}
     INPUT
-     \\begin{bmatrix}
-  -\\sin \\lambda_0 & \\cos \\lambda_0 & 0 \\\\
-  -\\sin \\varphi_0 \\cos \\lambda_0 & -\\sin \\varphi_0 \\sin \\lambda_0 & \\cos \\varphi_0 \\\\
-  \\cos \\varphi_0 \\cos \\lambda_0 & \\cos \\varphi_0 \\sin \\lambda_0 & \\sin \\varphi_0
- \\end{bmatrix}
+  M =
+\begin{bmatrix}
+ -\sin \lambda_0 & \cos \lambda_0 & 0 \\
+ -\sin \varphi_0 \cos \lambda_0 & -\sin \varphi_0 \sin \lambda_0 & \cos \varphi_0 \\
+ \cos \varphi_0 \cos \lambda_0 & \cos \varphi_0 \sin \lambda_0 & \sin \varphi_0
+\end{bmatrix}
     OUTPUT
   end
 end
