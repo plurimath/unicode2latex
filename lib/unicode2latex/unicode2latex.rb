@@ -2457,8 +2457,7 @@ module Unicode2LaTeX
 "ϰ": "\\varkappa",
 "ϱ": "\\varrho",
 "ϴ": "\\textTheta",
-"ϵ": "\\epsilon",
-"ε": "\\varepsilon",
+"ϵ": "\\varepsilon",
 "϶": "\\backepsilon",
   "↹":  "\\barleftarrowrightarrowba",
         }
