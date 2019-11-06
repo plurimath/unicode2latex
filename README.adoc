@@ -1,9 +1,11 @@
 = unicode2latex
 
 image:https://img.shields.io/gem/v/unicode2latex.svg["Gem Version", link="https://rubygems.org/gems/unicode2latex"]
-image:https://img.shields.io/travis/metanorma/unicode2latex/master.svg["Travis Build Status", link="https://travis-ci.com/metanorma/unicode2latex"]
-image:https://ci.appveyor.com/api/projects/status/j16ia0fq43mk9yje?svg=true["Appveyor Build Status", link="https://ci.appveyor.com/project/ribose/unicode2latex"]
+image:https://travis-ci.com/metanorma/unicode2latex.svg["Travis Build Status", link="https://travis-ci.com/metanorma/unicode2latex"]
+image:https://ci.appveyor.com/api/projects/status/n7pq0wdkcvfx4drx?svg=true["Appveyor Build Status", link="https://ci.appveyor.com/project/metanorma/unicode2latex"]
 image:https://codeclimate.com/github/metanorma/unicode2latex/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/unicode2latex"]
+image:https://img.shields.io/github/issues-pr-raw/metanorma/unicode2latex.svg["Pull Requests", link="https://github.com/metanorma/unicode2latex/pulls"]
+image:https://img.shields.io/github/commits-since/metanorma/unicode2latex/latest.svg["Commits since latest",link="https://github.com/metanorma/unicode2latex/releases"]
 
 Gem for translating UTF8 Unicode characters to LaTeX escapes
 
