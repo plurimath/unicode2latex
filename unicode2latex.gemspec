@@ -1,6 +1,6 @@
 # coding: utf-8
 
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "unicode2latex/version"
 
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Converts UTF-8 Unicode characters to LaTeX escapes"
   spec.description   = <<~DESCRIPTION
-  Converts UTF-8 Unicode characters to LaTeX escapes
+    Converts UTF-8 Unicode characters to LaTeX escapes
   DESCRIPTION
 
   spec.homepage      = "https://github.com/metanorma/unicode2latex"
