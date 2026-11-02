@@ -1,3 +1,29 @@
+## RETIRED — superseded by Plurimath
+
+This repository was archived on 2026-11-02 and is no longer maintained. Its
+functionality — converting UnicodeMath to LaTeX — is fully subsumed by
+https://github.com/plurimath/plurimath[Plurimath], which parses UnicodeMath
+(UTN28) natively and writes LaTeX.
+
+Gem usage:
+
+[source,ruby]
+----
+require "plurimath"
+
+formula = Plurimath::Math.parse("x^2+y_1", :unicode)
+formula.to_latex  # => "x^{2} + y_{1}"
+----
+
+CLI usage:
+
+[source,sh]
+----
+plurimath convert --input-format unicode --output-format latex --input "x^2+y_1"
+----
+
+Documentation: the formal specifications for every supported format live at
+https://plurimath.github.io/docs/ .
 ## DEPRECATION NOTICE: This repository is no longer maintained. Please visit link:https://github.com/plurimath/plurimath[Plurimath] for the latest updates and features.
 
 = unicode2latex
